@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Arezzo - Front-end Teste</title>
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+	<header id="header" role="header">
+		<button id="btn-open-nav"></button>
+		<nav id="nav" class="nav-colapse">
+			<button id="btn-close-nav">
+				<i class="fa fa-times"></i>
+			</button>
+			<ul>
+				<li>
+					<a href="javascript:void(0);">Sapatos</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Novidades</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Quem somos</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="active">Bazar</a>
+				</li>
+			</ul>
+			<button class="btn-my-account">Minha conta</button>
+		</nav>
+
+		<nav class="nav-colapse nav-right">
+			<ul>
+				<li>
+					<a href="javascript:void(0);">Buscar</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Minha Conta</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Sacola</a>
+				</li>
+			</ul>
+		</nav>
+
+		<img src="assets/images/logo.svg" alt="OWME">
+	</header>
+
+	<main id="main" role="main">
+		<section id="box-products">
+
+			<div class="box-content">
+				<h2>Sapatos</h2>
+				<form>
+					<div class="box-select">
+						<select id="selFilter" name="selFilter">
+							<option value="1">Maior Preço</option>
+							<option value="2">Menor Preço</option>
+							<option value="3">Nome A-Z</option>
+							<option value="4">Nome Z-A</option>	
+						</select>
+					</div>
+				</form>
+			</div>
+
+			<ul class="list-products"></ul>
+
+			<div id="box-pagination">
+				<ul>
+					<li class="btn-prev">
+						<a href="javascript:void(0);">
+							<i class="fa fa-chevron-left"></i>
+						</a>
+					</li>
+					<li class="active">
+						<a href="javascript:void(0);">1</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">2</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">3</a>
+					</li>
+					<li class="btn-next">
+						<a href="javascript:void(0);">
+							<i class="fa fa-chevron-right"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	
+	<div id="overlay" class="hidden"></div>
+
+    <script src="assets/javascript/index.js"></script>
+</body>
+</html>
